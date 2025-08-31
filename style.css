@@ -1,0 +1,13 @@
+::backdrop {
+    background-color: rgba(16, 138, 26, 0.5);
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #39af21;
+}
