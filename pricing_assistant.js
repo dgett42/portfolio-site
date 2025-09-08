@@ -12,7 +12,6 @@ let profitPerUnit = finalPriceWithTax - costPerUnit;
 let breakEvenUnits = Math.ceil(fixedMonthlyCosts / profitPerUnit);
 let isProfitablePerUnit = profitPerUnit > 0; 
 
-console.log("=== Product Pricing Assistant ===");
 console.log("Product Name: " + productName);
 console.log("Discounted Price (before tax): $" + discountedPrice.toFixed(2));
 console.log("Final Price (with tax): $" + finalPriceWithTax.toFixed(2));

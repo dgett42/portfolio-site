@@ -23,7 +23,6 @@ const weeksOfCoverDisplay = Number.isFinite(weeksOfCover)
   ? weeksOfCover.toFixed(2)
   : "∞";
 
-console.log("=== Inventory Reorder Assistant ===");
 console.log("Item:", itemName);
 console.log("Weeks of Cover:", weeksOfCoverDisplay);
 console.log("Reorder Now?:", reorderNow);
