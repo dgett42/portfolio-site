@@ -18,10 +18,13 @@ const reorderQuantity = reorderNow ? Math.ceil(stockDeficit) : 0;
 const estimatedReorderCost = reorderQuantity * unitCost;
 
 
+let weeksOfCoverDisplay;
 
-const weeksOfCoverDisplay = Number.isFinite(weeksOfCover)
-  ? weeksOfCover.toFixed(2)
-  : "∞";
+if (Number.isFinite(weeksOfCover)) {
+  weeksOfCoverDisplay = weeksOfCover.toFixed(2);
+} else 
+  weeksOfCoverDisplay = "∞";
+
 
 console.log("Item:", itemName);
 console.log("Weeks of Cover:", weeksOfCoverDisplay);
