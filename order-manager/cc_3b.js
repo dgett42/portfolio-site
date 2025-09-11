@@ -6,3 +6,5 @@ let inventory = [
 ];
 
 inventory.forEach(obj => console.log(`${obj.sku}\t|\t${obj.name}`));       
+
+inventory.push({ sku: "sku-005", name: "Pliers", price: 8.0, stock: 120 });
