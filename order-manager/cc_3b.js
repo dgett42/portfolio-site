@@ -8,6 +8,6 @@ let inventory = [
 inventory.forEach(obj => console.log(`${obj.sku}\t|\t${obj.name}`));       
 
 // Step 3 
-inventory.shift({ sku: "sku-005", name: "Pliers", price: 8.0, stock: 120 });
+inventory.push({ sku: "sku-005", name: "Pliers", price: 8.0, stock: 120 });
 inventory.pop([1]);
-inventory.forEach(obj => console.log(`${obj.sku}\t|\t${obj.name}`));
+
