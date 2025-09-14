@@ -6,6 +6,8 @@ let customers = [
 
 console.log(customers)
 
+// step 3
+
 customers.push({Name: "sophia", emial: "sophie22@usf.edu", Purchases: ["flour, sugar, baking powder"]}) 
 
 console.log(customers)
@@ -13,3 +15,8 @@ console.log(customers)
 customers.shift([0])
 
 console.log(customers)
+
+//step 4 
+customers[1].purchases.push("Ketchup");
+
+console.log(customers);
