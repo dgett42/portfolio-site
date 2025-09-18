@@ -28,3 +28,15 @@ switch (product.category) {
 
 }
 console.log("After discounts:", products);
+
+// Step 4 
+
+let customerType = "student", ;
+let subtotal = 230;
+let discount = 0;
+
+if (customerType === "student") {
+    discount = 0.05; // 5% discount
+} else {
+    discount = 0;
+}
