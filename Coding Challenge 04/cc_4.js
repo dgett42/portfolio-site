@@ -48,5 +48,30 @@ let total = subtotal * (1 - discount);
 console.log(`Subtotal before discount: $${subtotal.toFixed(2)}`);
 console.log(`The total after a ${discount*100}% discount for a ${customerType} is $${total.toFixed(2)}`);
 
+// Step 5: use for or while loops to simulate checkout process for 3 customers
+let customers = [
+    { type: "student", subtotal: 150 },
+    { type: "senior", subtotal: 200 },
+    { type: "regular", subtotal: 100 },
+];
+for (let customer of customers) {
+    let discount = 0;
+    if (customer.type === "student") {
+        discount = 0.05; // 5% discount
+    } else if (customer.type === "senior") {
+        discount = 0.07; // 7% discount
+    } else {
+        discount = 0;     // No discount
+    }   
+    let total = customer.subtotal * (1 - discount);
+    console.log(`Subtotal before discount: $${customer.subtotal.toFixed(2)}`);
+    console.log(`The total after a ${discount*100}% discount for a ${customer.type} is $${total.toFixed(2)}`);
+}   
 
+// Step 6: Use for...in to log each key/valuse pair for a single product after discounts are applied
+let product = { name: "Laptop", category: "electronics", price: 799.99, inventory: 10 };
+console.log("Product details after discount:");
+for (let key in product) {
+    console.log(`${key}: ${product[key]}`);
+}   
 
