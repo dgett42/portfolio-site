@@ -75,3 +75,11 @@ for (let key in product) {
     console.log(`${key}: ${product[key]}`);
 }   
 
+// Step 7: use Object.keys() and destructuring to log all product info after inventory is updated
+let updatedProduct = { name: "Laptop", category: "electronics", price: 799.99, inventory: 8 };
+let { name, category, price, inventory } = updatedProduct;
+let keys = Object.keys(updatedProduct);
+console.log("Updated product details:");
+for (let key of keys) {
+    console.log(`${key}: ${updatedProduct[key]}`);
+}
