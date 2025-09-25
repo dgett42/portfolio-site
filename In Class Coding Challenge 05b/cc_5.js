@@ -71,4 +71,17 @@ function lineItemTotal(cartItem) {
     return cart.reduce((sum, item) => sum + lineItemTotal(item), 0);
  }
 
- 
+ //Task 6 
+function customerAdjustmentRate(type) {
+    switch (type) {
+        case "student":
+            return 0.03;
+        case "member":
+            return 0.05;
+        case "vip":
+            return 0.10;
+        default:
+            return 0;
+    }
+}
+
