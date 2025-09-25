@@ -57,3 +57,11 @@ function findProductById(id) {
     }
     return null;
 }
+
+//Task 4 
+function lineItemTotal(cartItem) {
+    const product = findProductById(cartItem.productId);
+    if (!product || cartItem.qty <= 0) return 0;
+    const discountedUnitPrice = priceAfterCategoryDiscount(product);
+    return cartItem.qty * discountedUnitPrice;
+}
