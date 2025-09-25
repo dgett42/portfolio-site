@@ -65,3 +65,10 @@ function lineItemTotal(cartItem) {
     const discountedUnitPrice = priceAfterCategoryDiscount(product);
     return cartItem.qty * discountedUnitPrice;
 }
+
+//Task 5
+ function orderSubtotal(cart) {
+    return cart.reduce((sum, item) => sum + lineItemTotal(item), 0);
+ }
+
+ 
