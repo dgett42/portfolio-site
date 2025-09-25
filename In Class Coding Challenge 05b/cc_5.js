@@ -85,3 +85,11 @@ function customerAdjustmentRate(type) {
     }
 }
 
+//Task 7
+function orderTotal(cart, customerType) {
+    const sub = orderSubtotal(cart);
+    const adj = customerAdjustmentRate(customerType);
+    const final = sub * (1 - adj);
+    return final;
+}
+
