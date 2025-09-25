@@ -93,3 +93,9 @@ function orderTotal(cart, customerType) {
     return final;
 }
 
+//Task 8 
+function formatCurrency(amount) {
+  return "$" + amount.toFixed(2);
+}
+
+//Task 9 
