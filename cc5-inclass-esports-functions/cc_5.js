@@ -99,3 +99,20 @@ function formatCurrency(amount) {
 }
 
 //Task 9 
+function printReceipt(cart, customerType) {
+    console.log("Receipt:");
+    for (const item of cart) {
+        const product = findProductById(item.productId);
+        const unitPrice = priceAfterCategoryDiscount(product);
+        const lineTotal = lineItemTotal(item);
+        console.log(
+            `${product.name} x${item.qty} @ ${formatCurrency(unitPrice)} = ${formatCurrency(lineTotal)}`
+        );
+    }
+    const subtotal = orderSubtotal(cart);
+    const adjustmentRate = customerAdjustmentRate(customerType);
+    const finalTotal = orderTotal(cart, customerType);
+    console.log(`Subtotal: ${formatCurrency(subtotal)}`);
+    console.log(`Customer Adjustment: ${(adjustmentRate * 100).toFixed(0)}%`);
+    console.log(`Final Total: ${formatCurrency(finalTotal)}`);
+}
