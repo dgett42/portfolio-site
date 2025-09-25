@@ -27,7 +27,7 @@ function getCategoryDiscount(category) {
         case "apparel":
             return .15
             break
-        case "Snacks":
+        case "snacks":
             return .08
             break 
         case "access": 
@@ -50,3 +50,10 @@ function priceAfterCategoryDiscount(product) {
 console.log(priceAfterCategoryDiscount(products[0]))
 
 //Task 3
+
+function findProductById(id) {
+    for (let p of products) {
+        if (p.id === id) return p;
+    }
+    return null;
+}
