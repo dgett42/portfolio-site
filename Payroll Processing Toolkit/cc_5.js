@@ -46,3 +46,10 @@ function processPayroll(employee) {
         netPay: netPay
     };
 }
+
+//Step 7 
+
+employeeObjects.forEach(employee => {
+    const payroll = processPayroll(employee);
+    console.log(payroll);
+});
