@@ -8,3 +8,8 @@ let employeeObjects = [
     { name: "David", hourlyRate: 19, hoursWorked: 32 }
 ];
 
+// Step 3 
+
+function calculateBasePay(rate, hours) {
+    return rate * Math.min(hours, 40);
+}
